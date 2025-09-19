@@ -43,11 +43,9 @@ body {
     .cabecalho {
         flex-direction: column; /* Altera a direção para coluna em telas pequenas */
         text-align: center; /* Centraliza o texto */
-       
-      .cabecalho h1 {
         font-size: 1.5rem;
         line-height: 1.2;
-        panding: 15px;}
+        panding: 15px;
     }
 }
 
@@ -56,12 +54,14 @@ body {
     font-size: 2.5rem;
     color: #5375a6;
     text-align: center;
+  panding: 15 px
 }
 
 .cabecalho p {
     font-size: 1.1rem;
     color: #666;
     text-align: center;
+  
 }
 
 .cabecalho button {
