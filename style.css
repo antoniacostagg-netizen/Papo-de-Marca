@@ -61,7 +61,11 @@ body {
     font-size: 1.1rem;
     color: #666;
     text-align: center;
-    padding: 15px; /* Propriedade corrigida */
+    max-width: 90%;   /* ocupa quase toda a largura */
+    margin: 15px auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
 }
 
 .cabecalho button {
