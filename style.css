@@ -23,6 +23,7 @@ body {
 .cabecalho-conteudo {
     flex: 1; /* Faz com que o texto ocupe o espaço disponível */
     text-align: center; /* Centraliza o texto horizontalmente */
+    white-space: normal;
 }
 
 .cabecalho-imagem {
@@ -38,10 +39,12 @@ body {
 }
 
 /* Media Query para telas menores (mobile) */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .cabecalho {
         flex-direction: column; /* Altera a direção para coluna em telas pequenas */
         text-align: center; /* Centraliza o texto */
+        font-size: 1.5rem;
+        line-height: 1.2;
     }
 }
 
