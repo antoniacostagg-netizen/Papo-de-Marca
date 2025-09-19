@@ -45,6 +45,7 @@ body {
         text-align: center; /* Centraliza o texto */
         font-size: 1.5rem;
         line-height: 1.2;
+        panding: 15px;
     }
 }
 
