@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #5375a6;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Estilos para telas grandes (desktop) */
+.cabecalho {
+    display: flex; /* Habilita o Flexbox no header */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 30px; /* Cria um espaço entre as divs */
+    padding: 100px;
+}
+
+.cabecalho-conteudo {
+    flex: 1; /* Faz com que o texto ocupe o espaço disponível */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.cabecalho-imagem {
+    flex: 1; /* Faz com que a imagem ocupe o espaço disponível */
+    text-align: center; /* Centraliza a imagem horizontalmente */
+}
+
+.cabecalho-imagem img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem se a div for maior */
+}
+
+/* Media Query para telas menores (mobile) */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Altera a direção para coluna em telas pequenas */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+/* Estilos de exemplo para o conteúdo */
+.cabecalho h1 {
+    font-size: 2.5rem;
+    color: #5375a6;
+    text-align: center;
+}
+
+.cabecalho p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+}
+
+.cabecalho button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+section.Sobre-Nos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    background: linear-gradient(to right, #b7c0cc, #5375a6, #145abd);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.texto-sobre-nos {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.img-sobre-nos {
+    flex: 1;
+    text-align: center;
+}
+.img-sobre-nos img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    section.Sobre-Nos {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Estilos gerais para a seção */
+.Nossos-Servicos {
+    padding: 50px 20px;
+    text-align: center; /* Centraliza o título h2 */
+}
+
+/* Estilo para o título */
+.Nossos-Servicos h2 {
+    font-size: 2rem;
+    margin-bottom: 40px; /* Adiciona espaço abaixo do título */
+}
+
+.Nossos-Servicos
+    p {
+    
+    margin-top: 40px; /* Adiciona um espaço acima do parágrafo */
+        max-width: 800px; /* Limita a largura para que o texto não se estenda demais */
+        margin-left: auto; /* Centraliza o parágrafo em si se ele tiver max-width */
+        margin-right: auto;
+        line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+        color: #333;
+    }
+
+/* Contêiner Flexbox para os itens de serviço */
+.container-servicos {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 30px; /* Adiciona espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+}
+
+/* Estilo para cada item de serviço (imagem + botão) */
+.servico-item {
+    flex: 1 1 300px; /* Define o tamanho base para os itens */
+    text-align: center;
+    max-width: 300px;
+}
+
+/* Estilo para as imagens */
+.servico-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo para o botão */
+.servico-item button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.servico-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para telas menores (mobile) */
+@media (max-width: 768px) {
+    .container-servicos {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens empilhados */
+    }
+
+    .servico-item {
+        margin-bottom: 20px; /* Adiciona espaço entre os itens na versão mobile */
+    }
+}
+
+/* Estilos gerais para a seção */
+.Nossos-Pacotes {
+    
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px;
+   background: linear-gradient(to right, #b7c0cc, #5375a6, #145abd);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Estilo para o título */
+.Nossos-Pacotes h2 {
+    
+    font-size: 2rem;
+    margin-bottom: 40px; /* Adiciona espaço abaixo do título */
+    color: #ffffff;
+}
+
+.Nossos-Pacotes p {
+
+   margin-top: 40px; /* Adiciona um espaço acima do parágrafo */
+    max-width: 800px; /* Limita a largura para que o texto não se estenda demais */
+    margin-left: auto; /* Centraliza o parágrafo em si se ele tiver max-width */
+    margin-right: auto;
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+    color: #ffffff;
+}
+
+/* Contêiner Flexbox para os itens dos pacotes */
+.container-pacotes {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 30px; /* Adiciona espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+}
+
+/* Estilo para cada item de pacote */
+.pacote-item {
+    flex: 1 1 300px; /* Define o tamanho base para os itens */
+    text-align: center;
+    max-width: 300px; /* Limita a largura máxima do item */
+    background-color: #f8f9fa; /* Cor de fundo para destacar o item */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo para as imagens */
+.pacote-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo para o botão */
+.pacote-item button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pacote-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para telas menores (mobile) */
+@media (max-width: 768px) {
+    .container-pacotes {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens empilhados */
+    }
+
+    .pacote-item {
+        margin-bottom: 20px; /* Adiciona espaço entre os itens na versão mobile */
+    }
+}
+/* Estilos para a seção de Chamada para Ação */
+.secao-cta {
+    padding: 80px 20px;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: #f0f0f0; /* Cor de fundo para destacar a seção */
+     background-image: url(LandingPage/Design\ sem\ nome\ \(4\).png);
+
+    
+}
+
+/* Estilo para o título da CTA */
+.secao-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para o parágrafo da CTA */
+.secao-cta p {
+    font-size: 1.2rem;
+    max-width: 700px; /* Limita a largura para melhor leitura */
+    margin: 0 auto 30px; /* Centraliza o parágrafo e adiciona margem abaixo */
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Estilo para o botão da CTA */
+.secao-cta button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.secao-cta button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o rodapé */
+footer {
+    padding: 20px;
+    background-color: #333; /* Fundo escuro para contraste */
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    
+}
