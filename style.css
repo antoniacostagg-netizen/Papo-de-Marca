@@ -41,29 +41,28 @@ body {
 /* Media query para telas pequenas (smartphones, por exemplo) */
 @media (max-width: 768px) {
     .cabecalho {
-        flex-direction: column; /* Altera a direção para coluna em telas pequenas */
+        flex-direction: column; /* Altera a direção para coluna */
         text-align: center; /* Centraliza o texto */
+        padding: 15px;
         font-size: 1.5rem;
         line-height: 1.2;
-        padding: 15px; /* Propriedade corrigida */
     }
 }
 
-/* Estilos gerais para o conteúdo */
+/* Estilos para o conteúdo do cabeçalho */
 .cabecalho h1 {
     font-size: 1.5rem;
     color: #5375a6;
     text-align: center;
-    padding: 15px; /* Propriedade corrigida */
+    padding: 15px;
 }
 
 .cabecalho p {
-    font-size: 1.1rem;
     color: #666;
     text-align: center;
-    max-width: 90%;   /* ocupa quase toda a largura */
+    max-width: 90%; 
     margin: 15px auto;
-    font-size: 1rem;
+    font-size: 1rem; /* Apenas uma declaração para evitar redundância */
     line-height: 1.5;
 }
 }
