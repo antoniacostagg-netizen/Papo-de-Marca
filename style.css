@@ -38,31 +38,30 @@ body {
     margin: 0 auto; /* Centraliza a imagem se a div for maior */
 }
 
-/* Media Query para telas menores (mobile) */
-@media (max-width: 480px) {
+/* Media query para telas pequenas (smartphones, por exemplo) */
+@media (max-width: 768px) {
     .cabecalho {
         flex-direction: column; /* Altera a direção para coluna em telas pequenas */
         text-align: center; /* Centraliza o texto */
         font-size: 1.5rem;
         line-height: 1.2;
-        panding: 15px;
+        padding: 15px; /* Propriedade corrigida */
     }
 }
 
-/* Estilos de exemplo para o conteúdo */
+/* Estilos gerais para o conteúdo */
 .cabecalho h1 {
     font-size: 1.5rem;
     color: #5375a6;
     text-align: center;
-  panding: 15px;
+    padding: 15px; /* Propriedade corrigida */
 }
 
 .cabecalho p {
     font-size: 1.1rem;
     color: #666;
     text-align: center;
-  panding: 15px;
-  
+    padding: 15px; /* Propriedade corrigida */
 }
 
 .cabecalho button {
